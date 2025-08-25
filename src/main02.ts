@@ -22,14 +22,13 @@ students[2].addCourse("English", 3.9);
 students[2].addCourse("History", 3.7);
 
 function showStudentsData(): void {
-    console.log("\n=== ข้อมูลนักศึกษา ===");
+    console.log("\nข้อมูลนักศึกษา");
     students.forEach(s => {
         console.log(`ID: ${s.studentID}, ชื่อ: ${s.name}`);
         s.courses.forEach(c => console.log(`  วิชา: ${c.subject}, เกรด: ${c.grade}`));
         console.log(`เกรดเฉลี่ย: ${s.getAverage().toFixed(2)}\n`);
     });
 }
-
 
 showStudentsData();
 
